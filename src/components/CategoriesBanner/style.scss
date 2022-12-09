@@ -1,0 +1,72 @@
+@import 'src/index.scss';
+.category-box {
+  display: block;
+  width: 32%;
+  height: 250px;
+  border: 1px solid #e6e6e6;
+  position: relative;
+}
+.category-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(103, 117, 214, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+.category-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.c-box-text {
+  display: block;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  height: 67%;
+  font-size: 14px;
+  overflow: hidden;
+  z-index: 10;
+}
+.box-title {
+  font-size: 28px;
+}
+.category-btn {
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  transform: translate(0, 120px) scale(0.8);
+  transition: 0.8s;
+  cursor: pointer;
+}
+.stick {
+  background-color: white;
+  transform: translate(0, 82px) scaleX(0);
+  width: 90px;
+  height: 2px;
+  transition: 0.6s;
+}
+.category-box:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+.category-box:hover .stick {
+  transform: translate(0, 82px) scaleX(1);
+}
+.category-box:hover .category-btn {
+  transform: translate(0, 80px) scale(1);
+  transition-delay: 0.2s;
+}
+.category-box:hover .c-box-text h2,
+.category-box:hover .c-box-text p {
+  color: white;
+}

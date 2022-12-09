@@ -1,0 +1,229 @@
+@import 'src/index.scss';
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  padding: 10px 0;
+  inset: 0 0 0 0;
+  z-index: 200;
+  transition: 0.6s;
+}
+.shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.733);
+  z-index: 500;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+.shadow.active {
+  opacity: 1;
+  visibility: visible;
+}
+.logo {
+  color: #151875;
+  font-size: 40px;
+  font-weight: 700;
+  margin-right: 70px;
+  font-family: "Great Vibes", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.hamburgerBtn {
+  background-color: transparent;
+  border: 0;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.page_links li {
+  margin-left: 15px;
+  padding: 20px 10px 20px 0;
+  font-size: 14px;
+}
+.page_links li a {
+  display: inline-block;
+  color: #151875;
+  font-weight: 500;
+  transition: 0.4s;
+  position: relative;
+  z-index: 0;
+}
+
+.page_links li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #df4244;
+  border: 1px solid #df4244;
+  width: 110%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: 0.4s;
+  z-index: -1;
+}
+
+.page_links a:hover {
+  color: white;
+}
+.page_links a:hover::before {
+  transform: scaleY(1) skew(15deg);
+}
+.info {
+  position: relative;
+}
+.info::after {
+  content: "YENİ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(80px, -16px);
+  background-color: #f74877;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 30px;
+  height: 15px;
+  border-radius: 8px;
+}
+.nav_icons li {
+  color: #151875;
+  font-size: 20px;
+  padding-left: 22px;
+  padding-right: 11px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.nav_icons li > i {
+  transition: 0.4s;
+}
+.nav_icons li:hover > i {
+  transform: scale(1.2);
+}
+.nav_icons li:last-of-type {
+  padding-right: 0;
+}
+.ShopCart-Container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100vh;
+  background-color: rgb(255, 254, 254);
+  z-index: 1000;
+  padding: 50px 20px;
+  transform: translateX(100%);
+  transition: 0.4s;
+}
+.ShopCart-Container.show{
+  transform: translateX(0) !important;
+}
+.carts-container {
+  padding: 0 5px;
+  max-height: 450px;
+  overflow-y: auto;
+}
+.carts-container h3 {
+  text-align: center;
+  width: 100%;
+}
+.cart-item {
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.288);
+  padding: 5px;
+  border-radius: 5px;
+  position: relative;
+  margin: 15px 0;
+}
+.cart-item img {
+  width: 100px;
+  height: 120px;
+}
+.cart-item-text {
+  width: 60%;
+}
+.cart-item-text a {
+  display: inline-block;
+  font-weight: 600;
+  color: #151875;
+  margin-bottom: 10px;
+}
+.clearCart {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  padding: 5px;
+  font-size: 18px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+.clearCart i,
+.closeCart i {
+  transition: 0.4s;
+}
+.closeCart:hover i,
+.clearCart:hover i {
+  transform: scale(1.2);
+  color: #df4244;
+}
+.closeCart {
+  position: absolute;
+  font-size: 30px;
+  top: 48px;
+  right: 60px;
+  cursor: pointer;
+}
+.viewCart {
+  display: inline-block;
+  background-color: #151875;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 30px;
+  border: 2px solid #151875;
+  transition: 0.4s;
+}
+.viewCart:hover {
+  color: #151875;
+  background-color: white;
+  font-weight: 600;
+}
+.totalstick {
+  height: 2px;
+  margin: 10px 0;
+  background-color: #151875;
+}
+
+.Shopping-cart {
+  position: relative;
+}
+.counter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(10px, -5px);
+  background-color: #df4244;
+  color: white;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

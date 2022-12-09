@@ -1,0 +1,90 @@
+@import 'src/index.scss';
+.about-section {
+  margin-top: 70px;
+  height: 300px;
+  background-image: url("../../assets/images/about/about.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-text {
+  width: 60%;
+  text-align: justify;
+}
+.mission-title {
+  font-size: 30px;
+}
+.mission-description {
+  line-height: 1.7;
+  margin: 30px 0;
+}
+.quote {
+  position: relative;
+  margin-left: 30px;
+  padding-right: 30px;
+  font-family: "Montessart", sans-serif;
+}
+.quote span {
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.quote::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-27px);
+  background-color: #2328c0;
+  width: 5px;
+  height: 100%;
+}
+.mission-image {
+  width: 35%;
+  height: 500px;
+  position: relative;
+  z-index: 0;
+}
+.mission-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.chooseUs {
+  margin-top: 120px;
+}
+.chooseUsText {
+  width: 50%;
+}
+.chooseUsText p {
+  margin: 20px 0;
+}
+.chooseUsText ul li {
+  margin-bottom: 10px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.chooseUsText ul li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-30px, 2px);
+  width: 100%;
+  height: 100%;
+}
+.chooseUsimage {
+  width: 40%;
+  height: 380px;
+  overflow: hidden;
+  cursor: pointer;
+}

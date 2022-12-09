@@ -1,0 +1,108 @@
+@import 'src/index.scss';
+
+.service-box {
+  width: 25%;
+  text-align: center;
+  color: black;
+  position: relative;
+}
+.service-box p {
+  margin: 15px 0;
+  color: #57667e;
+}
+.services-section {
+  background-image: url("../../assets/images/serviceBack.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.service-box:not(.service-box:last-of-type)::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 95%;
+  background: black;
+  bottom: 0;
+  right: -2%;
+  top: 1%;
+}
+.service-box * {
+  color: black;
+}
+footer {
+  background-color: #222;
+}
+
+.Footer-heading {
+  color: white;
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+}
+.footer-column:first-of-type {
+  width: 36%;
+}
+.footer-column:nth-of-type(2) {
+  width: 20%;
+}
+.footer-column {
+  width: 30%;
+  margin-right: 40px;
+}
+.footer-column h3 {
+  color: white;
+}
+.footer-column:not(:first-of-type) {
+  padding: 15px 0;
+}
+.footerUl li {
+  color: white;
+}
+.footerUl li i {
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.footerUl li a {
+  display: inline-block;
+  color: white;
+  margin-bottom: 15px;
+}
+.F-input-group {
+  width: 100%;
+  position: relative;
+}
+.F-input-group #Footer-subs {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  padding: 0 10px;
+}
+.F-input-group .Subscribe {
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  background-color: #df4244;
+  color: white;
+  border-radius: 30px;
+  height: 48px;
+  border: 0;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.footer-icons li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  color: #151875;
+  transition: 0.6s;
+}
+.footer-icons li a:hover {
+  transform: scale(1.1) rotate(360deg);
+}
