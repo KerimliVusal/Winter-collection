@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Winter-collection/static/css/main.009cee50.css",
+    "main.js": "/Winter-collection/static/js/main.0f2ae9eb.js",
+    "static/media/blogbg.png": "/Winter-collection/static/media/blogbg.5b8c6e013a7a63f66da1.png",
+    "static/media/why.gif": "/Winter-collection/static/media/why.751c5b35fc8881ddbab6.gif",
+    "static/media/galshir-attack.gif": "/Winter-collection/static/media/galshir-attack.d21d4e07b4ea13370fec.gif",
+    "static/media/phone.gif": "/Winter-collection/static/media/phone.91bac14062d9cc1843f4.gif",
+    "static/media/about.jpg": "/Winter-collection/static/media/about.53b7603a56a022b8fa35.jpg",
+    "static/media/b1.png": "/Winter-collection/static/media/b1.334ec00835b0d9a7fdcb.png",
+    "static/media/s1.png": "/Winter-collection/static/media/s1.1c610e1ddf8f978f20f9.png",
+    "static/media/3c.jpg": "/Winter-collection/static/media/3c.0a9749421121e4675a5f.jpg",
+    "static/media/b1-2.png": "/Winter-collection/static/media/b1-2.f6746a9397206efa49c9.png",
+    "static/media/s1-1.png": "/Winter-collection/static/media/s1-1.51b613bbb217196d3150.png",
+    "static/media/s1-2.png": "/Winter-collection/static/media/s1-2.eedf25189e184038a486.png",
+    "static/media/b2-3.png": "/Winter-collection/static/media/b2-3.4001c5709d7b1bccf848.png",
+    "static/media/b2-1.png": "/Winter-collection/static/media/b2-1.f309e5b97f633e98e6ef.png",
+    "static/media/b2.png": "/Winter-collection/static/media/b2.8e45fc7d4cae1648ff00.png",
+    "static/media/serviceBack.webp": "/Winter-collection/static/media/serviceBack.64e4609e6f7f1cd9eda2.webp",
+    "static/media/slick.svg": "/Winter-collection/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Winter-collection/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Winter-collection/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Winter-collection/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Winter-collection/index.html",
+    "main.009cee50.css.map": "/Winter-collection/static/css/main.009cee50.css.map",
+    "main.0f2ae9eb.js.map": "/Winter-collection/static/js/main.0f2ae9eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.009cee50.css",
+    "static/js/main.0f2ae9eb.js"
+  ]
+}
