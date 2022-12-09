@@ -7,7 +7,6 @@ import { setAllData } from './store/features/allDataSlice';
 import Loading from './components/Loading/Loading';
 import Header from './components/Header/Header';
 import Home from './containers/Home/Home';
-// https://raw.githubusercontent.com/T-Ulvi/Fashion-Store/main/images/p10-type1.jpg
 import {Routes,Route, useLocation, useNavigate} from 'react-router-dom'
 import Detail from './containers/Detail/Detail';
 import Footer from './components/Footer/Footer';
@@ -16,7 +15,7 @@ import BlogPage from './containers/BlogPage/BlogPage';
 import AboutPage from './containers/AboutPage/AboutPage';
 import ContactPage from './containers/Contact/ContactPage';
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const dispatch=useDispatch();
   const location=useLocation();
@@ -32,7 +31,6 @@ function App() {
   },[]);
 
   useEffect(()=>{
-    setLoading(true)
     setTimeout(()=>{
       setLoading(false)
           },1500) 
